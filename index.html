@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="bk">
+
+    <h1 id="headline">Body Mass Index</h1>
+    <div id="form-group">
+        <form action="/result" method="POST">
+            
+            <div id="sex">
+                <label for="sex">Sex: </label>
+                <select name="Male" id="box" required="required">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div id="height">
+                
+                <label for="height">Height: </label>
+                <input type="number" name="height" class="box2" placeholder="Enter your height in CM">
+                
+            </div>
+            <div id="weight">
+                <label for="weight">Weight: </label>
+                <input type="number" name="weight" class="box2" placeholder="Enter your weight in KG">
+            </div>
+            <div id="bt">
+
+                <button type="submit" class="btn">Predict</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+</body>
+
+</html>

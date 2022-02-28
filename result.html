@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+
+<body>
+    <div class="res">
+        {% if prediction == 0 %}
+            <h1>Prediction:"Extremely Weak"</h1>
+            <img src="img/weak1.jpeg" alt="error">
+            <h3>You should do!</h3>
+            <li>Focus on functional movements</li>
+            <li>Gain flexibility</li>
+            <li>Perform compound exercises</li>
+            <li>Make breakfast a priority</li>
+            <li>Eat more protein with every meal.</li>
+        {% elif prediction == 1 %}
+            <h1>Prediction:"Weak"</h1>
+        {% elif prediction == 2 %}
+            <h1>Prediction:"Normal"</h1>
+        {% elif prediction == 3 %}
+            <h1>Prediction:"Over-Weight"</h1>
+        {% elif prediction == 4 %}
+            <h1>Prediction:"obesity"</h1>
+        {% elif prediction == 5 %}
+            <h1>Prediction:"Extremely obesity"</h1>
+        {%endif%}
+
+
+    </div>
+</body>
+
+</html>
